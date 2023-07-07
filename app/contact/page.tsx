@@ -5,8 +5,6 @@ import {
   StructuredTextDocument,
 } from 'react-datocms/structured-text';
 import { ContactForm } from '@/components/ContactForm';
-import { WhatsappIcon } from '@/components/WhatsappIcon';
-import { generateWhatsAppLink } from '@/lib/whatsapp';
 
 import { Metadata } from 'next';
 
@@ -41,16 +39,6 @@ export default async function Home() {
             <StructuredText
               data={contactPage.content.value as StructuredTextDocument}
             />
-          </div>
-          {contactPage.phoneNumber && <div className="mt-5">
-            <a
-              href={generateWhatsAppLink(contactPage.phoneNumber)}
-              className="w-full font-bold flex space-x-4 items-center text-[#128c7e] underline underline-offset-2 decoration-[#128c7e]"
-            >
-              <WhatsappIcon className="w-[2em]" />
-              <span>Prefer to chat? WhatsApp me!</span>
-            </a>
-          </div>}
         </div>
       </div>
       <div className="mx-7 py-12 lg:mx-0 lg:py-0 lg:flex lg:items-center lg:justify-center">

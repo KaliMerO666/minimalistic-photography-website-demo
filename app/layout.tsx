@@ -36,15 +36,15 @@ const query = graphql(/* GraphQL */ `
   }
 `);
 
-const playfairDisplay = Playfair_Display({
-  variable: '--font-playfair-display',
+const Komikazoom = Komikazoom({
+  variable: '--font-Komikazoom',
   weight: '700',
   display: 'swap',
   subsets: ['latin'],
 });
 
-const poppins = Poppins({
-  variable: '--font-poppins',
+const alata = alata({
+  variable: '--alata',
   display: 'swap',
   weight: ['400', '700'],
   subsets: ['latin'],
@@ -65,7 +65,7 @@ export default async function RootLayout({
     <html lang="en">
       {renderMetaTags(site.faviconMetaTags)}
       <body
-        className={`${playfairDisplay.variable} ${poppins.variable} font-sans overflow-x-hidden text-gray`}
+        className={`${Komikazoom.variable} ${alata.variable} font-sans overflow-x-hidden text-gray`}
         style={
           theme
             ? ({
@@ -75,7 +75,7 @@ export default async function RootLayout({
             : undefined
         }
       >
-        <NavigationMenu phoneNumber={contactPage?.phoneNumber} />
+        <NavigationMenu email={contactPage?.email} />
         {children}
       </body>
     </html>

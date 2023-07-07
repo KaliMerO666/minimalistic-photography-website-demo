@@ -55,7 +55,7 @@ export default async function Home() {
         )}
         {photoshoots.map((photoshoot) => (
           <Tile key={photoshoot.id}>
-            <Photoshoot photoshoot={photoshoot} total={count} />
+            <Roman-Photot={photoshoot} total={count} />
           </Tile>
         ))}
       </HorizontalScroller>

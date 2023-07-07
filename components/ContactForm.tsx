@@ -9,7 +9,6 @@ import { useState } from "react";
 const FormSchema = z.object({
   name: z.string().min(1),
   email: z.string().email().min(1),
-  phoneNumber: z.string(),
   message: z.string().min(1),
 });
 
@@ -120,12 +119,6 @@ export function ContactForm({ formId }: { formId: string }) {
           placeholder="Please insert your email"
           field={zo.fields.email}
           errors={zo.errors.email}
-        />
-        <Field
-          label="Your phone number"
-          placeholder="Please insert your phone number"
-          field={zo.fields.phoneNumber}
-          errors={zo.errors.phoneNumber}
         />
         <Field
           label="Your message*"

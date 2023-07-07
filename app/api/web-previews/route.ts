@@ -21,10 +21,10 @@ function generatePreviewUrl(
 	switch (itemType.attributes.api_key) {
 		case "contact_page":
 			return "/contact";
-		case "about_page":
-			return "/about";
+		case "yam_what_yam":
+			return "/about_page";
 		case "homepage":
-		case "photoshoot":
+		case "roman-photo":
 			return "/";
 		default:
 			return null;

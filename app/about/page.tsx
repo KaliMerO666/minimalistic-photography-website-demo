@@ -33,7 +33,7 @@ export default async function Home() {
             {aboutPage.kicker}
           </div>
           <h1 className="text-black font-serif mb-12 text-5xl xl:text-8xl tracking-tight">
-            {aboutPage.title}
+            yamwhatyam
           </h1>
           <div className="text-xl mb-12 leading-loose">
             <StructuredText

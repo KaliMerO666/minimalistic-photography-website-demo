@@ -17,7 +17,7 @@ export default graphql(/* GraphQL */ `
       }
     }
 
-    photoshoots: allPhotoshoots(orderBy: position_ASC) {
+    photoshoots: roman-photo(orderBy: position_ASC) {
       id
       ...Photoshoot_photoshoot
     }

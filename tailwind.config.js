@@ -16,15 +16,15 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       white: colors.white,
-      red: colors.red,
+      red: colors.red ,
       stone: colors.stone,
       gray: colors.stone['600'],
       black: colors.stone['900'],
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-poppins)', ...defaultTheme.fontFamily.sans],
-        serif: ['var(--font-playfair-display)', ...defaultTheme.fontFamily.serif],
+        sans: ['var(--font-alata)', ...defaultTheme.fontFamily.sans],
+        normal: ['var(--font- Komikazoom)', ...defaultTheme.fontFamily.serif],
       },
       typography: {
         DEFAULT: {

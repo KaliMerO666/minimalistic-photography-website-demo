@@ -13,7 +13,6 @@ export default graphql(/* GraphQL */ `
       content {
         value
       }
-      phoneNumber
       formsparkFormId
     }
   }
